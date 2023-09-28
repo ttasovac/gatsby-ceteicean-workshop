@@ -1,4 +1,16 @@
-# Gatsby CETEIcean Workshop
+# Nova humanistika
+
+## Install fix
+
+See <https://github.com/gatsbyjs/gatsby/issues/37242>
+
+```json
+"overrides": {
+  "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+    "react": "^18.0.0"
+  }
+}
+```
 
 This repository was created for the TEI Conference and Members' Meeting 2022 workshop _Building TEI-powered websites with static site technology. A hands on exploration of the publishing toolkit of the Scholarly Editing Journal_. And updated in 2023 for the TEI-MEC Joint Conference workshop _Introduction to publishing XML with static site and front-end technologies_.
 
