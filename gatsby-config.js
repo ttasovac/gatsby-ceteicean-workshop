@@ -6,15 +6,17 @@ module.exports = {
     menuLinks: [
       {
         name: "Home",
-        link: "/"
+        link: "/",
       },
       {
         name: "About",
-        link: "/about"
-      }
-    ]
+        link: "/about",
+      },
+    ],
   },
   plugins: [
+    "gatsby-plugin-postcss",
+    // ...
     // `gatsby-theme-ceteicean`, // USE THIS IF YOU DON'T NEED THE OPTIONS BELOW
     {
       resolve: `gatsby-theme-ceteicean`,
@@ -24,9 +26,9 @@ module.exports = {
         namespaces: {
           "http://www.tei-c.org/ns/1.0": "tei",
           "http://www.tei-c.org/ns/Examples": "teieg",
-          "http://www.w3.org/2001/XInclude": "xi"
-        }
-      }
+          "http://www.w3.org/2001/XInclude": "xi",
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -35,4 +37,4 @@ module.exports = {
       },
     },
   ],
-}
+};
