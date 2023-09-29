@@ -1,8 +1,8 @@
-const {applyxslt} = require('./scripts/applyxslt')
+const { applyxslt } = require("./scripts/applyxslt");
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby CETEIcean Workshop`,
+    title: "Центар за дигиталне хуманистичке науке",
     menuLinks: [
       {
         name: "Home",
@@ -35,6 +35,24 @@ module.exports = {
       options: {
         path: `static/tei`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`, `sr`],
+        // language file path
+        defaultLanguage: `sr`,
+        // option to redirect to `/ko` when connecting `/`
+        redirect: false,
+      },
+    },
+    {
+      resolve: `prism-react-renderer`,
+      options: {  
+      }
     },
   ],
 };

@@ -1,9 +1,9 @@
-import React from "react"
+// import React from "react"
 
-const Head = ({title}) => {
-  return (
-    <title>{title}</title>
-  )
-}
+// const Head = ({title}) => {
+//   return (
+//     <title>{title}</title>
+//   )
+// }
 
-export default Head
+// export default Head

@@ -1,6 +1,17 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import { useIntl } from "gatsby-plugin-intl";
+
+// export function Head() {
+//   const intl = useIntl();
+//   return (
+//     <>
+//       <title>Hello World</title>
+//       <html lang={intl.locale} />
+//     </>
+//   );
+// }
 
 const Index = () => {
   const data = useStaticQuery(graphql`
